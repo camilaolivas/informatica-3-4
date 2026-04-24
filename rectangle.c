@@ -2,12 +2,19 @@
 
 int main (void)
 {
-   int variableW = 4;
+   int width;
 
-   int variableL = 8;
+   int lenght;
 
-   scanf("%d", &variableW);
+   printf("Enter width: ");
 
+    scanf("%d", &width);
 
-scanf("%d", &variableL);
+   printf("Enter lenght: ");
+
+   scanf("%d", &lenght);
+
+   printf("Area: %d \n", width*lenght);
+
+   printf("Perimeter: %d \n", 2*(width+lenght));
 }
