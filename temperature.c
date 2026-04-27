@@ -2,11 +2,15 @@
 
 int main (void)
 {
-  float X;
+  float F;
 
    printf("Enter temperature in Fahrenheit ");
 
-   scanf("%f", &X);
+   scanf("%f", &F);
 
-    printf("Area: %d \n", width*lenght);
+   float C= (F-32)/1.8;
+
+    printf("F° %.2f = C° %.2f",F,C);
+
+    //-40F°=-40C°
 }
