@@ -1,25 +1,20 @@
 #include <stdio.h>
-
 int main (void)
 {
-   int mvrn;
-   int strtm;
-
-   printf("Movie running time:");
-
-   scanf("%d", &mvrn);
-
+    int runningTime;
+    printf("Movie running time:");
+    scanf("%d", &runningTime);
+    int startHour;
+    int startMin;
     printf("Start time:");
+    scanf("%d:%d",&startHour, &startMin);
 
-    scanf("%d", &strtm);
+    int hours = runningTime / 60;
+    int minutes = runningTime % 60;
 
-    int hinm = mvrn/60
-    int mit = hinm %1;
-    int edtm =strtm-hinm-mit;
-    int endt =
+    int endHour = startHour + hours;
+    int endMin = startMin + minutes;
 
-    printf("The movie is %d hr long:\n",hinm );
-    printf("%d min long\n", mit);
-    printf("End time is %d hr \n", endtm);
-    printf("and %d min \n", endt);
+    printf("The movie will last %d hr and %d min", hours, minutes);
+    printf("End time: %d:%d\n", endHour, endMin);
 }
