@@ -17,7 +17,8 @@ int main (void)
 
     if(endMin >= 60){
         endHour = endHour + (endMin / 60); //Update value of endHour variable
-        endMin = endMin % 60;
+        endMin = endMin % 60;//Update value of endMin variable
+        //If someone runs a 1,000 min movie we already fix the problem and will give you a right answear
     }
 
     printf("The movie will last %d hr and %d min\n", hours, minutes);
