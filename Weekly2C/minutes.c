@@ -15,6 +15,11 @@ int main (void)
     int endHour = startHour + hours;
     int endMin = startMin + minutes;
 
-    printf("The movie will last %d hr and %d min", hours, minutes);
-    printf("End time: %d:%d\n", endHour, endMin);
+    if(endMin >= 60){
+        endHour = endHour + (endMin / 60); //Update value of endHour variable
+        endMin = endMin % 60;
+    }
+
+    printf("The movie will last %d hr and %d min\n", hours, minutes);
+    printf("End time: %d:%02d\n", endHour, endMin);
 }
