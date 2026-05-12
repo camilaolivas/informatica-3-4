@@ -59,5 +59,7 @@ void division(void){
     printf("What did you wanna divide?\n");
     scanf("%f %f",&a4,&b4);
     float r4 = a4 / b4;
+    if(b4 == 0);
+    printf("Math error");
     printf("%f / %f = %f\n", a4, b4, r4);
 }
